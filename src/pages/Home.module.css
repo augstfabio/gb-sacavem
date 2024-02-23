@@ -1,0 +1,72 @@
+.home {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.images {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
+.imgContainer {
+    overflow: hidden;
+    width: 400px;
+    height: 600px;
+    margin: 0 10px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+}
+
+.imgContainer:hover img {
+    transform: scale(1.1);
+    transform-origin: center center;
+}
+
+.about {
+    height: 90vh;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 400px;
+}
+
+.text h2 {
+    font-size: 50px;
+    margin-bottom: 1em;
+}
+
+.btn {
+    align-self: center;
+}
+
+.logo {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about img {
+    height: inherit;
+    width: auto;
+    cursor: default;
+}

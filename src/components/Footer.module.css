@@ -1,0 +1,21 @@
+footer {    
+    height: 200px;
+    width: auto;
+}
+.links{
+    height: inherit;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2em;
+}
+.links a {
+    margin: 1em;
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+}
+.links a:hover{
+    color: rgb(157, 155, 155);
+}

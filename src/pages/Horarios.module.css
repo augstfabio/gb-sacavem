@@ -1,0 +1,43 @@
+.horarios{
+    height: 90vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1 {
+    font-weight: 300;
+}
+thead th{
+    font-weight: 500;
+    font-size: 25px;
+}
+.tabela h2 {
+    font-size: 15px;
+    margin-top: 2em;
+    font-weight: 600;    
+}
+.tabela {
+    height: 500px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+table{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+table tr {
+    display: flex;
+    width: 300px;
+    margin-top: 2em;
+    justify-content: space-between;
+}
