@@ -1,0 +1,24 @@
+.box {
+    height: 300px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.carousel{
+    display: flex;
+    height: 300px;
+    width: 450px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    flex: none;
+}
+.box button {
+    height: 50px;
+    width: 30px;
+    border: none;
+    background-color: white;
+}
+.carousel::-webkit-scrollbar{
+    display: none;
+}

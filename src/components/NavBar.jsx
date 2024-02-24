@@ -38,7 +38,7 @@ function NavBar() {
               <a href='https://leaodourado.com.br/historia-do-jiu-jitsu/'>História do Jiu Jitsu</a>
               <Link to='/regras'>Regras no Tatame</Link>
               <Link to='/familia'>Família Gracie Barra</Link>
-              <Link to='/horarios'>Gracie Barra Sacavém</Link>
+              <Link to='/gb-sacavem/about'>Gracie Barra Sacavém</Link>
               <Link to='/horarios'>Horários</Link>
             </div>
           )}

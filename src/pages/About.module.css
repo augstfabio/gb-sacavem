@@ -1,0 +1,81 @@
+
+.title{
+    height: 80px;
+    display: flex;
+    width: auto;
+    justify-content: center;   
+    margin-bottom: 2em; 
+}
+.title h1{
+    font-size: 50px;
+    font-weight: 300;
+}
+.sobre_nos {
+    height: 80vh;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.sobre {
+    display: flex;
+    height: 80vh;
+    width: inherit;
+    flex-direction: row;
+    transform: translateY(200px);
+    opacity: 0;
+}
+
+.eco {
+    display: flex;
+    height: 70vh;
+    width: inherit;
+    flex-direction: row;
+    transform: translateY(700px);
+    opacity: 0;
+}
+.eco_treinos{
+    height: 70vh;
+    width: auto;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    margin: 3em 4em;
+    height: 400px;
+    width: 800px;
+}
+.texto h2{
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.texto p {
+    font-size: 20px;
+}
+.sobre_nos img {
+    height: 340px;
+    width: 500px;
+}
+.kids{
+    display: flex;
+    height: 70vh;
+    width: auto;
+    transform: translateY(700px);
+    opacity: 0;
+}
+
+.carousel{
+    width: 500px;
+}
+.carousel{
+    margin: 2em;
+    height: 350px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+

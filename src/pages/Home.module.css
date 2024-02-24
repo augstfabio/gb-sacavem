@@ -19,6 +19,7 @@
     width: 400px;
     height: 600px;
     margin: 0 10px;
+ 
 }
 
 img {
@@ -39,6 +40,8 @@ img {
     width: auto;
     display: flex;
     justify-content: space-around;
+    transform: translateY(700px);
+    opacity: 0;
 }
 
 
