@@ -19,7 +19,6 @@
     width: 400px;
     height: 600px;
     margin: 0 10px;
-
 }
 
 img {
@@ -85,50 +84,76 @@ img {
         align-items: center;
     }
 
-    .images {
-        align-self: center;
-        display: flex;
-        width: 80%;
-        height:20vh;
-        margin-bottom: 1em;
-        justify-content: center;
-    }
+    
     .about {
         height: 200vh;
         width: auto;
         display: flex;
         flex-direction: column;
         transform: none;
+        justify-content: center;
         opacity: 1;
+        margin: 0;
     }
     .text {
         display: flex;
         flex-direction: column;
         width:90%;
         align-self: center;
-        height: 40vh;
+        height: 60vh;
         margin: 0;
     }
     
     .text h2 {
-        font-size: 40px;
+        font-size: 37px;
         margin-bottom: 1em;
         align-self: center;
     }
+    .text p{
+        font-size: 14px;
+        text-align: center;
+    }
     .logo {
-
         margin: 0;
         display: flex;
+        height:50vh;
+        width: 100%;
+        align-self: center;
         align-items: center;
         justify-content: center;
-        height:60vh;
-        width: 60%;
-        align-self: center;
     }
-    .about img {
-        height: inherit;
+    .about img {    
+        height: 300px;
         width: auto;
+        margin: 0;
         cursor: default;
-    }
 
+    } 
+    .images {
+        align-self: center;
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        margin-bottom: 0em;
+        margin-top: 1em;
+        justify-content: center;    
+    }
+    .imgContainer {
+        overflow: hidden;
+        height: 40vh;   
+        margin: 0 2px;
+    }
+    .imgContainer img {
+        display: block;
+        width: 140px;
+        height: 35vh;
+        cursor: pointer;
+        transition: none;
+    }
+    .imgContainer:hover img {
+       transform: none;
+    }
+    .btn {
+        margin-top: 1em;
+    }
 }
