@@ -5,7 +5,7 @@ import logo from '../assets/logo.svg';
 import { FaCaretDown } from "react-icons/fa";
 function NavBar() {
   const [mostrarMenu, setMostrarMenu] = useState(false);
-
+ 
   const mostrarMenuMouseEnter = () => {
     setMostrarMenu(true);
   };
@@ -38,7 +38,7 @@ function NavBar() {
               <a href='https://leaodourado.com.br/historia-do-jiu-jitsu/'>História do Jiu Jitsu</a>
               <Link to='/regras'>Regras no Tatame</Link>
               <Link to='/familia'>Família Gracie Barra</Link>
-              <Link to='/gb-sacavem/about'>Gracie Barra Sacavém</Link>
+              <Link to='/about'>Gracie Barra Sacavém</Link>
               <Link to='/horarios'>Horários</Link>
             </div>
           )}

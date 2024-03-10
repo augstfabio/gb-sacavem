@@ -19,7 +19,7 @@
     width: 400px;
     height: 600px;
     margin: 0 10px;
- 
+
 }
 
 img {
@@ -72,4 +72,63 @@ img {
     height: inherit;
     width: auto;
     cursor: default;
+}
+
+@media screen and (max-width: 600px) {
+    .home {
+        background-color: rgb(255, 255, 255);
+        height: auto;
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images {
+        align-self: center;
+        display: flex;
+        width: 80%;
+        height:20vh;
+        margin-bottom: 1em;
+        justify-content: center;
+    }
+    .about {
+        height: 200vh;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        transform: none;
+        opacity: 1;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        width:90%;
+        align-self: center;
+        height: 40vh;
+        margin: 0;
+    }
+    
+    .text h2 {
+        font-size: 40px;
+        margin-bottom: 1em;
+        align-self: center;
+    }
+    .logo {
+
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:60vh;
+        width: 60%;
+        align-self: center;
+    }
+    .about img {
+        height: inherit;
+        width: auto;
+        cursor: default;
+    }
+
 }

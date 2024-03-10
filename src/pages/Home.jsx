@@ -54,7 +54,7 @@ function Home() {
                         adipisicing elit. Dicta voluptas necessitatibus
                         nesciunt! Est, saepe dolores facilis quo blanditiis quisquam, odio nobis quidem nulla necessitatibus voluptate minima illum
                         ad sapiente repudiandae.</p>
-                    <Link to='/gb-sacavem/about' className={styles.btn}><Button text="Saiba mais" /></Link>
+                    <Link to='/about' className={styles.btn}><Button text="Saiba mais" /></Link>
                 </div>
                 <div className={styles.logo}><img src={logo} alt="logo Gracie Barra" /></div>
             </div>
