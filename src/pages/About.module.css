@@ -1,21 +1,23 @@
-
-.title{
+.title {
     height: 80px;
     display: flex;
     width: auto;
-    justify-content: center;   
-    margin-bottom: 2em; 
+    justify-content: center;
+    margin-bottom: 2em;
 }
-.title h1{
+
+.title h1 {
     font-size: 50px;
     font-weight: 300;
 }
+
 .sobre_nos {
     height: 80vh;
     width: auto;
     display: flex;
     justify-content: space-around;
 }
+
 .sobre {
     display: flex;
     height: 80vh;
@@ -33,7 +35,8 @@
     transform: translateY(700px);
     opacity: 0;
 }
-.eco_treinos{
+
+.eco_treinos {
     height: 70vh;
     width: auto;
 }
@@ -45,7 +48,8 @@
     height: 400px;
     width: 800px;
 }
-.texto h2{
+
+.texto h2 {
     font-size: 40px;
     font-weight: 300;
     margin-bottom: 1em;
@@ -54,11 +58,13 @@
 .texto p {
     font-size: 20px;
 }
+
 .sobre_nos img {
     height: 340px;
     width: 500px;
 }
-.kids{
+
+.kids {
     display: flex;
     height: 70vh;
     width: auto;
@@ -66,10 +72,11 @@
     opacity: 0;
 }
 
-.carousel{
+.carousel {
     width: 500px;
 }
-.carousel{
+
+.carousel {
     margin: 2em;
     height: 350px;
     width: 900px;
@@ -79,3 +86,98 @@
 }
 
 
+@media screen and (max-width: 600px) {
+    .about {
+        height: 320vh;
+    }
+    .title {
+        height: 70px;
+        display: flex;
+        width: auto;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .title h1 {
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .sobre_nos {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .sobre {
+        display: flex;
+        height: 100vh;
+        width: 100%t;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    .eco {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        transform: none;
+        opacity: 1;
+    }
+
+    .eco_treinos {
+        height: 70vh;
+        width: auto;
+    }
+
+    .texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        height: 400px;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .texto h2 {
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 1em;
+    }
+
+    .texto p {
+        font-size: 15px;
+    }
+
+    .sobre_nos img {
+        height: 250px;
+        width: 100%;
+    }
+
+    .kids {
+        display: flex;
+        height: 90vh;
+        flex-direction: column-reverse;
+        width: 100%;
+        transform: none;
+        opacity: 1;
+        align-items: center;
+    }
+
+    .carousel {
+        margin: 0;
+        height: 400px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
