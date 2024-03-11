@@ -139,6 +139,13 @@
         background-color: inherit;
         font-size: 13px;
     }
-
+    .itens a {
+        text-decoration: none;
+        margin: 1em;
+        height: 27px;
+        width: 300x;
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+    }
 
 }
