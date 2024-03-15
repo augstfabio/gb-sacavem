@@ -5,6 +5,8 @@ import img2 from '../assets/home2.jpg';
 import logo from '../assets/logo.svg'
 import img1 from '../assets/home1.jpg';
 import Button from '../components/Button';
+import ReactPlayer from 'react-player'
+import video from '../assets/video.mp4'
 
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
@@ -26,7 +28,7 @@ function Home() {
                 end: 'bottom 700px',
                 scrub: true,
             }
-            
+
         })
         return () => {
             gsap.killTweensOf(about.current)
@@ -36,14 +38,14 @@ function Home() {
 
     return (
         <div ref={homePage} className={styles.home}>
-            <div  className={styles.images}>
-                <div className={styles.imgContainer}><img src={img2} alt=""/></div>
+            <div className={styles.images}>
+                <div className={styles.imgContainer}><img src={img2} alt="" /></div>
                 <div className={styles.imgContainer}><img src={img1} alt="" /></div>
                 <div className={styles.imgContainer}><img src={img3} alt="" /></div>
             </div>
             <div ref={about} className={styles.about}>
-                <div  className={styles.text}>
-                    <h2>Sobre Nós</h2>
+                <div className={styles.text}>
+                    <h2>QUEM SOMOS?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Inventore, beatae
                         mollitia. Maxime et culpa, aut, harum
@@ -57,6 +59,36 @@ function Home() {
                     <Link to='/about' className={styles.btn}><Button text="Saiba mais" /></Link>
                 </div>
                 <div className={styles.logo}><img src={logo} alt="logo Gracie Barra" /></div>
+            </div>
+            <div className={styles.competition}>
+                <ReactPlayer
+                    url={video}
+                    playing={true}
+                    loop={true}
+                    muted={true}
+                    width="100%"
+                    height="117vh"
+                    style={{ position: 'absolute', top: 0, left: 0, opacity: 1 }} />
+                <div className={styles.boxes}>
+                    <div className={styles.turmas}>
+                        <h1>Nosso programa</h1>
+                    </div>
+                    <div className={styles.turmasSection}>
+                        <article>
+                            <h1>Treino Kids</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, commodi veniam laborum illum adipisci dolores totam non dolorum quisquam numquam architecto, voluptatum ea possimus labore laudantium eligendi accusantium rerum voluptatibus?</p>
+                        </article>
+                        <article>
+                            <h1>Treino Adultos</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, commodi veniam laborum illum adipisci dolores totam non dolorum quisquam numquam architecto, voluptatum ea possimus labore laudantium eligendi accusantium rerum voluptatibus?</p>
+                        </article>
+                        <article>
+                            <h1>Treino Nogi</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, commodi veniam laborum illum adipisci dolores totam non dolorum quisquam numquam architecto, voluptatum ea possimus labore laudantium eligendi accusantium rerum voluptatibus?</p>
+                        </article>
+                    </div>
+
+                </div>
             </div>
         </div>
     );

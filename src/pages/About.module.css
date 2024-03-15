@@ -84,8 +84,6 @@
     align-items: center;
     justify-content: center;
 }
-
-
 @media screen and (max-width: 600px) {
     .about {
         height: 320vh;

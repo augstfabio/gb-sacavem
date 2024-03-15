@@ -35,7 +35,7 @@ img {
 }
 
 .about {
-    height: 90vh;
+    height: 80vh;
     width: auto;
     display: flex;
     justify-content: space-around;
@@ -52,7 +52,7 @@ img {
 }
 
 .text h2 {
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 1em;
 }
 
@@ -71,6 +71,69 @@ img {
     height: inherit;
     width: auto;
     cursor: default;
+}
+
+.competition {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow:auto; 
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content:end;
+}
+.boxes{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.turmas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.turmas h1 {
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.turmasSection{
+    display: flex;
+    align-self: center;
+    height: 80%;
+    width: 80%;
+}
+.turmasSection article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 400px;
+    margin: 1em;
+    height: 300px;
+    cursor: pointer;
+    border-top: solid white 1px;
+    transition: all 0.3s ease-in-out;
+}
+.turmasSection article:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.turmasSection article h1{
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 500;
+    margin: 0 0 2em 2em;
+
+}
+.turmasSection article p{
+    font-size: 15px;
+    margin:0 2em;
 }
 
 @media screen and (max-width: 600px) {

@@ -8,10 +8,13 @@ import eco1 from '../assets/eco1.jpg'
 import eco2 from '../assets/eco2.jpg'
 import eco3 from '../assets/eco3.jpg'
 
+
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import { useLayoutEffect } from 'react'
 import { useRef } from 'react'
+
+
 function About() {
     const sobreNos = useRef()
     const sobre = useRef()
@@ -110,13 +113,15 @@ function About() {
                             voluptatem iusto animi, inventore sit voluptatum accusamus
                             7 laboriosam expedita, omnis repellendus ducimus? Corporis,
                             voluptatum qui!</p>
-                        
+
                     </div>
                     <div className={styles.carousel}>
-                            <Carousel img1={eco1} img2={eco3} img3={eco2} />
-                        </div>
+                        <Carousel img1={eco1} img2={eco3} img3={eco2} />
+                    </div>
                 </div>
             </section>
+            
+
         </div>
     )
 }
