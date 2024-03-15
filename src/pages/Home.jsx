@@ -10,12 +10,23 @@ import video from '../assets/video.mp4'
 
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import { useLayoutEffect } from 'react'
+import { useEffect, useLayoutEffect } from 'react'
 import { useRef } from 'react'
+import { useState } from 'react';
 
 function Home() {
+    const [tamanhoTela, setTamanhoTela] = useState(window.innerWidth)
     const about = useRef();
     const homePage = useRef();
+    const handleResize = ()=>{
+        setTamanhoTela(window.innerWidth);
+    }
+    useEffect(()=>{
+        window.addEventListener('resize', handleResize);
+        return ()=>{
+            window.removeEventListener('resize', handleResize)
+        }
+    },[])
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
         gsap.to(about.current, {
@@ -60,30 +71,34 @@ function Home() {
                 </div>
                 <div className={styles.logo}><img src={logo} alt="logo Gracie Barra" /></div>
             </div>
-            <div className={styles.competition}>
-                <ReactPlayer
+            <div className={styles.competition}>{
+                tamanhoTela < 600 ? (
+                   <div className="container"></div>
+                ):( <ReactPlayer
                     url={video}
                     playing={true}
                     loop={true}
                     muted={true}
                     width="100%"
                     height="117vh"
-                    style={{ position: 'absolute', top: 0, left: 0, opacity: 1 }} />
+                    style={{ position: 'absolute', top: 0, left: 0, opacity: 1}} />)
+            }
+                
                 <div className={styles.boxes}>
                     <div className={styles.turmas}>
-                        <h1>Nosso programa</h1>
+                        <h1>turmas</h1>
                     </div>
                     <div className={styles.turmasSection}>
                         <article>
-                            <h1>Treino Kids</h1>
+                            <h1>Turma Kids</h1>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, commodi veniam laborum illum adipisci dolores totam non dolorum quisquam numquam architecto, voluptatum ea possimus labore laudantium eligendi accusantium rerum voluptatibus?</p>
                         </article>
                         <article>
-                            <h1>Treino Adultos</h1>
+                            <h1>Turma Teens</h1>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, commodi veniam laborum illum adipisci dolores totam non dolorum quisquam numquam architecto, voluptatum ea possimus labore laudantium eligendi accusantium rerum voluptatibus?</p>
                         </article>
                         <article>
-                            <h1>Treino Nogi</h1>
+                            <h1>Turma Adultos</h1>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, commodi veniam laborum illum adipisci dolores totam non dolorum quisquam numquam architecto, voluptatum ea possimus labore laudantium eligendi accusantium rerum voluptatibus?</p>
                         </article>
                     </div>
